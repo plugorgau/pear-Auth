@@ -81,7 +81,7 @@ class Auth_Anonymous extends Auth
      * @return void
      * @see Auth::Auth()
      */
-    function Auth_Anonymous($storageDriver, $options = '', $loginFunction = '', $showLogin = true) {
+    function __construct($storageDriver, $options = '', $loginFunction = '', $showLogin = true) {
         parent::Auth($storageDriver, $options, $loginFunction, $showLogin);
     }
 

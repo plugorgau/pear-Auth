@@ -54,7 +54,7 @@ class Auth_Container_vpopmail extends Auth_Container {
      *
      * @return void
      */
-    function Auth_Container_vpopmail()
+    function __construct()
     {
         if (!extension_loaded('vpopmail')) {
             return PEAR::raiseError('Cannot use VPOPMail authentication, '

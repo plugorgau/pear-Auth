@@ -104,7 +104,7 @@ class Auth_Controller
      * @return void
      * @todo Add a list of urls which need redirection
      */
-    function Auth_Controller(&$auth_obj, $login='login.php', $default='index.php', $accessList=array())
+    function __construct(&$auth_obj, $login='login.php', $default='index.php', $accessList=array())
     {
         $this->auth = $auth_obj;
         $this->_loginPage = $login;

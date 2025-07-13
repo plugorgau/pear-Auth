@@ -78,7 +78,7 @@ class Auth_Container_RADIUS extends Auth_Container
      * @param  $options associative array
      * @return object Returns an error object if something went wrong
      */
-    function Auth_Container_RADIUS($options)
+    function __construct($options)
     {
         $this->authtype = 'PAP';
         if (isset($options['authtype'])) {

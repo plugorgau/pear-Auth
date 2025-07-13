@@ -103,7 +103,7 @@ class Auth_Container_IMAP extends Auth_Container
      * @return object Returns an error object if something went wrong
      * @todo Use PEAR Net_IMAP if IMAP extension not loaded
      */
-    function Auth_Container_IMAP($params)
+    function __construct($params)
     {
         if (!extension_loaded('imap')) {
             return PEAR::raiseError('Cannot use IMAP authentication, '

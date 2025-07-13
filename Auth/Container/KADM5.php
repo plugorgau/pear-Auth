@@ -78,7 +78,7 @@ class Auth_Container_KADM5 extends Auth_Container {
      * @param  $options associative array
      * @return object Returns an error object if something went wrong
      */
-    function Auth_Container_KADM5($options) {
+    function __construct($options) {
         if (!extension_loaded('kadm5')) {
             return PEAR::raiseError("Cannot use Kerberos V authentication, KADM5 extension not loaded!", 41, PEAR_ERROR_DIE);
         }

@@ -143,7 +143,7 @@ class Auth_Container_SOAP extends Auth_Container
      * @param  $options, associative array with endpoint, namespace, method,
      *                   usernamefield, passwordfield and optional features
      */
-    function Auth_Container_SOAP($options)
+    function __construct($options)
     {
         $this->_options = $options;
         if (!isset($this->_options['matchpasswords'])) {

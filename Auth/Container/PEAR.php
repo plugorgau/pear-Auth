@@ -86,7 +86,7 @@ class Auth_Container_Pear extends Auth_Container
      *
      * @return void
      */
-    function Auth_Container_Pear($data = null)
+    function __construct($data = null)
     {
         if (!is_array($data)) {
             PEAR::raiseError('The options for Auth_Container_Pear must be an array');

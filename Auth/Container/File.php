@@ -83,7 +83,7 @@ class Auth_Container_File extends Auth_Container
      * @param  string $filename             path to passwd file
      * @return object Auth_Container_File   new Auth_Container_File object
      */
-    function Auth_Container_File($filename) {
+    function __construct($filename) {
         $this->_setDefaults();
 
         // Only file is a valid option here

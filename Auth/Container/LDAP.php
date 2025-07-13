@@ -227,7 +227,7 @@ class Auth_Container_LDAP extends Auth_Container
      * @param  $params, associative hash with host,port,basedn and userattr key
      * @return object Returns an error object if something went wrong
      */
-    function Auth_Container_LDAP($params)
+    function __construct($params)
     {
         if (false === extension_loaded('ldap')) {
             return PEAR::raiseError('Auth_Container_LDAP: LDAP Extension not loaded',

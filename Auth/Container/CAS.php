@@ -119,7 +119,7 @@ class Auth_Container_CAS extends Auth_Container
      * @param  $options, associative array with cas options features
      * @see    $_options
      */
-    function Auth_Container_CAS($options)
+    function __construct($options)
     {
         //Check for valid options
         foreach ($options as $key => $value) {

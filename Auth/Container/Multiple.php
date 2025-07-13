@@ -104,7 +104,7 @@ class Auth_Container_Multiple extends Auth_Container {
      * @param array $data Options for the container
      * @return void
      */
-    function Auth_Container_Multiple($options)
+    function __construct($options)
     {
         if (!is_array($options)) {
             PEAR::raiseError('The options for Auth_Container_Multiple must be an array');

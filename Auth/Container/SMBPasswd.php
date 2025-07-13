@@ -81,7 +81,7 @@ class Auth_Container_SMBPasswd extends Auth_Container
      * @param  $filename   string filename for a passwd type file
      * @return object Returns an error object if something went wrong
      */
-    function Auth_Container_SMBPasswd($filename)
+    function __construct($filename)
     {
         $this->pwfile = new File_SMBPasswd($filename,0);
 

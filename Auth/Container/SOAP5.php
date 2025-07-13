@@ -153,7 +153,7 @@ class Auth_Container_SOAP5 extends Auth_Container
      * @param  $options, associative array with endpoint, namespace, method,
      *                   usernamefield, passwordfield and optional features
      */
-    function Auth_Container_SOAP5($options)
+    function __construct($options)
     {
         $this->_setDefaults();
 

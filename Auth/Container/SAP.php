@@ -91,7 +91,7 @@ class Auth_Container_SAP extends Auth_Container {
      * @param array array of options.
      * @return void
      */
-    function Auth_Container_SAP($options)
+    function __construct($options)
     {
         $saprfc_loaded = PEAR::loadExtension('saprfc');
         if (!$saprfc_loaded) {

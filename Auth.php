@@ -314,6 +314,10 @@ class Auth {
     var $regenerateSessionId = false;
 
     // }}}
+
+    private $storage_driver;
+    private $storage_options;
+
     // {{{ Auth() [constructor]
 
     /**
@@ -330,7 +334,7 @@ class Auth {
      * @param boolean   Should the login form be displayed if necessary?
      * @return void
      */
-    function Auth($storageDriver, $options = '', $loginFunction = '', $showLogin = true)
+    function __construct($storageDriver, $options = '', $loginFunction = '', $showLogin = true)
     {
         $this->applyAuthOptions($options);
 
