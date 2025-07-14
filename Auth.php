@@ -1087,6 +1087,7 @@ class Auth {
         $this->password = '';
 
         $this->session = null;
+        $_SESSION[$this->_sessionName] = null;
     }
 
     // }}}
