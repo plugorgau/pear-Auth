@@ -866,6 +866,7 @@ class Auth {
         $this->session['username']   = $username;
         $this->session['timestamp']  = time();
         $this->session['idle']       = time();
+        $_SESSION[$this->_sessionName] = $this->session;
     }
 
     // }}}
